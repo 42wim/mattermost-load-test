@@ -1,5 +1,5 @@
 hash: d051ea456a033a7ea9428f65ae8aac54457cdc5f56061af4221f67f0d6134773
-updated: 2016-10-03T16:32:08.936572339-04:00
+updated: 2016-10-05T12:49:04.865066837-07:00
 imports:
 - name: github.com/alecthomas/log4go
   version: e5dc62318d9bd58682f1dceb53a4b24e8253682f
@@ -24,10 +24,10 @@ imports:
   subpackages:
   - hcl/ast
   - hcl/parser
-  - hcl/scanner
-  - hcl/strconv
   - hcl/token
   - json/parser
+  - hcl/scanner
+  - hcl/strconv
   - json/scanner
   - json/token
 - name: github.com/inconshreveable/mousetrap
@@ -37,7 +37,7 @@ imports:
 - name: github.com/magiconair/properties
   version: 0723e352fa358f9322c938cc2dadda874e9151a9
 - name: github.com/mattermost/platform
-  version: 4e293c04ee99d63b523205f4abc59d1465b760a2
+  version: 133c39b64d7465ee6a315386f911ec4549becda7
   subpackages:
   - model
 - name: github.com/mitchellh/mapstructure
@@ -82,12 +82,12 @@ imports:
   version: 6ab629be5e31660579425a738ba8870beb5b7404
   subpackages:
   - bcrypt
+  - pbkdf2
   - blowfish
+  - ssh
   - curve25519
   - ed25519
   - ed25519/internal/edwards25519
-  - pbkdf2
-  - ssh
 - name: golang.org/x/sys
   version: 8f0908ab3b2457e2e15403d3697c9ef5cb4b57a9
   subpackages:
@@ -107,4 +107,4 @@ imports:
   version: 20a0a429c5f93de45c90f5f09ea297c25e0929b3
 - name: gopkg.in/yaml.v2
   version: a5b47d31c556af34a302ce5d659e6fea44d90de0
-testImports: []
+devImports: []
