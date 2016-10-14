@@ -4,6 +4,7 @@
 package main
 
 import (
+	"math/rand"
 	"time"
 
 	"github.com/mattermost/mattermost-load-test/loadtestconfig"
@@ -46,7 +47,8 @@ func (me *UserEntityPoster) Start() {
 	posterConfig := NewUserEntityPosterConfig(me)
 
 	// Allows us to perform our action every x seconds
-	postTicker := time.NewTicker(time.Second * time.Duration(posterConfig.PostingFrequencySeconds))
+	postTicker := time.NewTicker(time.Second * time.Duration(rand.Intn(posterConfig.PostingFrequencySeconds)+1))
+
 	defer postTicker.Stop()
 
 	var postCount int64 = 0
